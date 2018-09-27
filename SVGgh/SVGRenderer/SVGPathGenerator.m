@@ -1469,7 +1469,6 @@ int ParameterCountForOperator(unichar anOperator)
 	CGMutablePathRef	mutableResult = CGPathCreateMutable();
 	if([pathToRender length])
 	{
-        CGPathMoveToPoint(mutableResult, NULL, 0.0, 0.0);
 		NSData* asciiData = [pathToRender dataUsingEncoding:NSASCIIStringEncoding];
 		NSUInteger	dataLength = [asciiData length];
 		const char*		rawData = (const char*)[asciiData bytes];
